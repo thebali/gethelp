@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock %}
+
+
+{% block content %}
+<h1>Child Protection Home</h1>
+
+  <p>Welcome to <em>Child Home of Safety</em>, a website which will help you protect from cyber bullies.</p>
+
+<h2>Content of the page</h2>
+
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Signup:</strong> {{ num_books }}</li>
+    <li><strong>Login:</strong> {{ num_instances }}</li>
+    <li><strong>Guidelines:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}
+
